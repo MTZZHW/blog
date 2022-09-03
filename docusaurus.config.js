@@ -24,7 +24,7 @@ const config = {
         blogSidebarTitle: '所有文章',
         blogSidebarCount: 'ALL',
         postsPerPage: 10,
-        editUrl: 'https://github.com/MTZZHW/blog/',
+        editUrl: 'https://github.com/MTZZHW/blog/tree/master',
       },
     ],
   ],
