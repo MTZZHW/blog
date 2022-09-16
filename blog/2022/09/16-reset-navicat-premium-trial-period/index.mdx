@@ -1,0 +1,17 @@
+---
+tags: [软件]
+---
+
+# 重置 Navicat Premium 试用期
+
+:::note
+
+以 Windows 16.0.13 版本为例
+
+:::
+
+在注册表中移除如下项：
+
+- \HKEY_CURRENT_USER\Software\Classes\CLSID 下有只有一个 Info 项的那一项，位置一般在最后一个。
+
+- \HKEY_CURRENT_USER\Software 下名为 PremiumSoft 的项。
