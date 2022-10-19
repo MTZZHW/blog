@@ -1,0 +1,15 @@
+---
+tags: [杂项]
+---
+
+# 解决谷歌翻译无法使用的问题
+
+谷歌翻译退出中国内地市场，translate.googleapis.com（Google 翻译 API）不再分配中国内地的服务器地址，所以浏览器内置的 Google 翻译无法使用。
+
+浏览器内置 API 不支持 socks5 代理，所以挂梯子是无效的，除非用系统代理。
+
+**解决方法**：可以通过编辑 hosts 文件对域名的地址解析进行修正。
+
+- 修改 hosts 文件，手动解析到中国内地服务器（需要自己找可以使用的服务器）。
+
+- 由于 translate.googleapis.com 采用与 update.googleapis.com 相同的 ip 地址，可以先 ping 一下得到对应的 ip 再修改 hosts 文件（ip 可能经常更改）。
